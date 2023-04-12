@@ -1,0 +1,14 @@
+/* App.css */
+
+/* fallback for IE */
+.gradient-text {
+  color: #ff00f7;
+}
+/* gradient text for modern browsers */
+@supports (background-clip: text) {
+  .gradient-text {
+    background-image: linear-gradient(60deg, #E21143, #FFB03A);
+    background-clip: text;
+    color: transparent;
+  }
+}
